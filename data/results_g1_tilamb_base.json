@@ -1,0 +1,20 @@
+{
+  "model": "TiLamb-7B-base",
+  "model_path": "<MODEL_ROOT>/.cache/modelscope/hub/models/YoLo2000/TiLamb-7B",
+  "timestamp": "2026-09-29 21:55:52",
+  "teacher": {
+    "ppl_own_tokenizer": 5.7274,
+    "bits_per_tibetan_syllable": 1.3331,
+    "ce_sum": 646937.748260498,
+    "ntok": 370681,
+    "syll_sum": 485286
+  },
+  "gen_beam4_200": {
+    "bleu4": 0.1579,
+    "chrf": 0.2049,
+    "rougeL": 0.0962,
+    "isr": 0.0157,
+    "scr": 0.8715,
+    "n": 200
+  }
+}

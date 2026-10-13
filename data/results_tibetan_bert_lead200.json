@@ -1,0 +1,99 @@
+{
+  "model": "tibetan_bert",
+  "setting": "lead200",
+  "best_epoch": 4,
+  "accuracy": 0.7684,
+  "macro_f1": 0.7471,
+  "per_class_f1": {
+    "ecotourism": 0.7797,
+    "law": 0.8128,
+    "new_agripastoral": 0.7016,
+    "politics": 0.8305,
+    "science_health": 0.696,
+    "tibetan_culture": 0.5684,
+    "world_outlook": 0.8405
+  },
+  "confusion_matrix": [
+    [
+      138,
+      10,
+      18,
+      2,
+      2,
+      4,
+      2
+    ],
+    [
+      4,
+      165,
+      8,
+      10,
+      7,
+      1,
+      1
+    ],
+    [
+      18,
+      7,
+      134,
+      7,
+      16,
+      3,
+      1
+    ],
+    [
+      2,
+      13,
+      9,
+      147,
+      1,
+      1,
+      2
+    ],
+    [
+      3,
+      10,
+      10,
+      9,
+      87,
+      2,
+      1
+    ],
+    [
+      5,
+      1,
+      9,
+      2,
+      8,
+      27,
+      4
+    ],
+    [
+      8,
+      4,
+      8,
+      2,
+      7,
+      1,
+      108
+    ]
+  ],
+  "labels": [
+    "ecotourism",
+    "law",
+    "new_agripastoral",
+    "politics",
+    "science_health",
+    "tibetan_culture",
+    "world_outlook"
+  ],
+  "config": {
+    "model": "tibetan_bert",
+    "gpu": 0,
+    "epochs": 4,
+    "batch": 32,
+    "lr": 2e-05,
+    "maxlen": 128,
+    "setting": "lead200"
+  }
+}

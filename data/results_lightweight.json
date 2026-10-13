@@ -1,0 +1,262 @@
+{
+  "labels": [
+    "ecotourism",
+    "law",
+    "new_agripastoral",
+    "politics",
+    "science_health",
+    "tibetan_culture",
+    "world_outlook"
+  ],
+  "results": {
+    "NaiveBayes": {
+      "accuracy": 0.7617,
+      "macro_f1": 0.7498,
+      "train_sec": 0.1
+    },
+    "SVM": {
+      "accuracy": 0.857,
+      "macro_f1": 0.8505,
+      "train_sec": 8.1
+    },
+    "LogReg": {
+      "accuracy": 0.8379,
+      "macro_f1": 0.8277,
+      "train_sec": 14.1
+    }
+  },
+  "per_class_f1": {
+    "NaiveBayes": {
+      "ecotourism": 0.7665,
+      "law": 0.8175,
+      "new_agripastoral": 0.7263,
+      "politics": 0.7701,
+      "science_health": 0.6506,
+      "tibetan_culture": 0.6607,
+      "world_outlook": 0.8571
+    },
+    "SVM": {
+      "ecotourism": 0.8611,
+      "law": 0.8608,
+      "new_agripastoral": 0.8032,
+      "politics": 0.905,
+      "science_health": 0.7984,
+      "tibetan_culture": 0.7885,
+      "world_outlook": 0.9368
+    },
+    "LogReg": {
+      "ecotourism": 0.8442,
+      "law": 0.8687,
+      "new_agripastoral": 0.7842,
+      "politics": 0.8825,
+      "science_health": 0.7581,
+      "tibetan_culture": 0.7451,
+      "world_outlook": 0.9111
+    }
+  },
+  "confusion_matrices": {
+    "NaiveBayes": [
+      [
+        128,
+        10,
+        13,
+        8,
+        4,
+        4,
+        9
+      ],
+      [
+        3,
+        159,
+        5,
+        18,
+        8,
+        3,
+        0
+      ],
+      [
+        7,
+        4,
+        138,
+        10,
+        21,
+        4,
+        2
+      ],
+      [
+        1,
+        6,
+        21,
+        139,
+        4,
+        1,
+        3
+      ],
+      [
+        4,
+        12,
+        10,
+        6,
+        81,
+        7,
+        2
+      ],
+      [
+        4,
+        1,
+        3,
+        3,
+        6,
+        37,
+        2
+      ],
+      [
+        11,
+        1,
+        4,
+        2,
+        3,
+        0,
+        117
+      ]
+    ],
+    "SVM": [
+      [
+        155,
+        5,
+        8,
+        3,
+        1,
+        2,
+        2
+      ],
+      [
+        4,
+        167,
+        7,
+        8,
+        8,
+        1,
+        1
+      ],
+      [
+        9,
+        8,
+        151,
+        5,
+        10,
+        2,
+        1
+      ],
+      [
+        2,
+        3,
+        5,
+        162,
+        2,
+        1,
+        0
+      ],
+      [
+        3,
+        8,
+        10,
+        2,
+        97,
+        1,
+        1
+      ],
+      [
+        4,
+        1,
+        6,
+        2,
+        2,
+        41,
+        0
+      ],
+      [
+        7,
+        0,
+        3,
+        1,
+        1,
+        0,
+        126
+      ]
+    ],
+    "LogReg": [
+      [
+        149,
+        7,
+        6,
+        4,
+        3,
+        1,
+        6
+      ],
+      [
+        2,
+        172,
+        6,
+        6,
+        9,
+        1,
+        0
+      ],
+      [
+        12,
+        6,
+        149,
+        5,
+        12,
+        2,
+        0
+      ],
+      [
+        1,
+        4,
+        12,
+        154,
+        2,
+        1,
+        1
+      ],
+      [
+        1,
+        9,
+        11,
+        3,
+        94,
+        3,
+        1
+      ],
+      [
+        5,
+        1,
+        6,
+        1,
+        4,
+        38,
+        1
+      ],
+      [
+        7,
+        1,
+        4,
+        1,
+        2,
+        0,
+        123
+      ]
+    ]
+  },
+  "tfidf": {
+    "analyzer": "char",
+    "ngram_range": [
+      2,
+      5
+    ],
+    "max_features": 5000
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "model": "Qwen2.5-7B-Instruct",
+  "model_path": "<MODEL_ROOT>/models/Qwen2.5-7B-Instruct",
+  "timestamp": "2026-09-29 21:40:43",
+  "teacher": {
+    "ppl_own_tokenizer": 3.7028,
+    "bits_per_tibetan_syllable": 1.2505,
+    "ce_sum": 606869.6748657227,
+    "ntok": 463584,
+    "syll_sum": 485286
+  },
+  "gen_beam4_200": {
+    "bleu4": 0.0,
+    "chrf": 0.0405,
+    "rougeL": 0.0235,
+    "isr": 0.0648,
+    "scr": 0.7489,
+    "n": 200
+  }
+}

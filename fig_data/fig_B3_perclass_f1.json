@@ -1,0 +1,126 @@
+{
+  "classes": [
+    "ecotourism",
+    "law",
+    "new_agripastoral",
+    "politics",
+    "science_health",
+    "tibetan_culture",
+    "world_outlook"
+  ],
+  "available_settings_per_model": {
+    "cino": [
+      "full",
+      "lead200"
+    ],
+    "tibetan_bert": [
+      "full",
+      "lead200"
+    ],
+    "textcnn": [
+      "first_sent",
+      "full",
+      "lead200"
+    ]
+  },
+  "note": "4th context setting 'first_sent' exists only for textcnn; cino/tibetan_bert provide full+lead200",
+  "models": {
+    "cino": {
+      "full": {
+        "accuracy": 0.8751,
+        "macro_f1": 0.8657,
+        "per_class_f1": {
+          "ecotourism": 0.8771,
+          "law": 0.8877,
+          "new_agripastoral": 0.8187,
+          "politics": 0.9435,
+          "science_health": 0.7954,
+          "tibetan_culture": 0.7818,
+          "world_outlook": 0.9556
+        }
+      },
+      "lead200": {
+        "accuracy": 0.8084,
+        "macro_f1": 0.7971,
+        "per_class_f1": {
+          "ecotourism": 0.7875,
+          "law": 0.8492,
+          "new_agripastoral": 0.7337,
+          "politics": 0.8678,
+          "science_health": 0.757,
+          "tibetan_culture": 0.6847,
+          "world_outlook": 0.8996
+        }
+      }
+    },
+    "tibetan_bert": {
+      "full": {
+        "accuracy": 0.8275,
+        "macro_f1": 0.8214,
+        "per_class_f1": {
+          "ecotourism": 0.8235,
+          "law": 0.8556,
+          "new_agripastoral": 0.7552,
+          "politics": 0.8902,
+          "science_health": 0.7589,
+          "tibetan_culture": 0.7568,
+          "world_outlook": 0.9098
+        }
+      },
+      "lead200": {
+        "accuracy": 0.7684,
+        "macro_f1": 0.7471,
+        "per_class_f1": {
+          "ecotourism": 0.7797,
+          "law": 0.8128,
+          "new_agripastoral": 0.7016,
+          "politics": 0.8305,
+          "science_health": 0.696,
+          "tibetan_culture": 0.5684,
+          "world_outlook": 0.8405
+        }
+      }
+    },
+    "textcnn": {
+      "full": {
+        "accuracy": 0.8055,
+        "macro_f1": 0.7869,
+        "per_class_f1": {
+          "ecotourism": 0.7718,
+          "law": 0.8389,
+          "new_agripastoral": 0.7493,
+          "politics": 0.9111,
+          "science_health": 0.6721,
+          "tibetan_culture": 0.6481,
+          "world_outlook": 0.917
+        }
+      },
+      "lead200": {
+        "accuracy": 0.755,
+        "macro_f1": 0.7286,
+        "per_class_f1": {
+          "ecotourism": 0.7305,
+          "law": 0.8092,
+          "new_agripastoral": 0.6776,
+          "politics": 0.8437,
+          "science_health": 0.6636,
+          "tibetan_culture": 0.5106,
+          "world_outlook": 0.8649
+        }
+      },
+      "first_sent": {
+        "accuracy": 0.7817,
+        "macro_f1": 0.7572,
+        "per_class_f1": {
+          "ecotourism": 0.7734,
+          "law": 0.8594,
+          "new_agripastoral": 0.708,
+          "politics": 0.8825,
+          "science_health": 0.6595,
+          "tibetan_culture": 0.5591,
+          "world_outlook": 0.8582
+        }
+      }
+    }
+  }
+}

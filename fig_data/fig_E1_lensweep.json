@@ -1,0 +1,181 @@
+{
+  "T_grid": [
+    32,
+    48,
+    64,
+    96,
+    128,
+    192,
+    256
+  ],
+  "tilamb": {
+    "rows": [
+      {
+        "T": 32,
+        "isr": 0.008155981358382478,
+        "scr": 0.8950608763782357,
+        "mean_gen_syll": 20.433333333333334,
+        "compression_syll": 0.05747124274794427,
+        "truncation_rate": 1.0,
+        "chrf": null,
+        "rougeL": null,
+        "bleu4": null
+      },
+      {
+        "T": 48,
+        "isr": 0.005924794549701826,
+        "scr": 0.8953033598639164,
+        "mean_gen_syll": 30.926666666666666,
+        "compression_syll": 0.0865280292061148,
+        "truncation_rate": 1.0,
+        "chrf": null,
+        "rougeL": null,
+        "bleu4": null
+      },
+      {
+        "T": 64,
+        "isr": 0.006769153220062199,
+        "scr": 0.899187088065905,
+        "mean_gen_syll": 41.346666666666664,
+        "compression_syll": 0.11449603238601185,
+        "truncation_rate": 1.0,
+        "chrf": null,
+        "rougeL": null,
+        "bleu4": null
+      },
+      {
+        "T": 96,
+        "isr": 0.005857638193002927,
+        "scr": 0.8964922459588981,
+        "mean_gen_syll": 61.346666666666664,
+        "compression_syll": 0.16767931863962224,
+        "truncation_rate": 1.0,
+        "chrf": null,
+        "rougeL": null,
+        "bleu4": null
+      },
+      {
+        "T": 128,
+        "isr": 0.0040621254022443236,
+        "scr": 0.8977327254778789,
+        "mean_gen_syll": 80.78666666666666,
+        "compression_syll": 0.21781795087469846,
+        "truncation_rate": 1.0,
+        "chrf": null,
+        "rougeL": null,
+        "bleu4": null
+      },
+      {
+        "T": 192,
+        "isr": 0.004392057478851408,
+        "scr": 0.8975478776572667,
+        "mean_gen_syll": 116.74666666666667,
+        "compression_syll": 0.3129389226477127,
+        "truncation_rate": 0.9933333333333333,
+        "chrf": null,
+        "rougeL": null,
+        "bleu4": null
+      },
+      {
+        "T": 256,
+        "isr": 0.004915986875606351,
+        "scr": 0.890876737783523,
+        "mean_gen_syll": 153.15333333333334,
+        "compression_syll": 0.41115187238511386,
+        "truncation_rate": 0.9933333333333333,
+        "chrf": null,
+        "rougeL": null,
+        "bleu4": null
+      }
+    ],
+    "spearman_compressionRate_T_isr": -0.8214285714285713,
+    "spearman_invT_isr": 0.8214285714285713,
+    "isr_fluctuation_ratio": 2.007811318152881,
+    "note_chrf_rouge_bleu": "逐档 chrF/ROUGE-L/BLEU-4 未被长度扫脚本记录(仅 ISR/scr/产出量逐档可用); 语义层指标待补 --metrics 重扫"
+  },
+  "qwen": {
+    "rows": [
+      {
+        "T": 32,
+        "isr": 0.04347089947089947,
+        "scr": 0.7764867724867724,
+        "mean_gen_syll": 6.473333333333334,
+        "compression_syll": 0.01710048278508843,
+        "truncation_rate": 1.0,
+        "chrf": null,
+        "rougeL": null,
+        "bleu4": null
+      },
+      {
+        "T": 48,
+        "isr": 0.04847145447145447,
+        "scr": 0.8109122544122545,
+        "mean_gen_syll": 9.46,
+        "compression_syll": 0.024909270464155052,
+        "truncation_rate": 1.0,
+        "chrf": null,
+        "rougeL": null,
+        "bleu4": null
+      },
+      {
+        "T": 64,
+        "isr": 0.044491647241647246,
+        "scr": 0.8152553802406743,
+        "mean_gen_syll": 12.2,
+        "compression_syll": 0.03254505583824639,
+        "truncation_rate": 1.0,
+        "chrf": null,
+        "rougeL": null,
+        "bleu4": null
+      },
+      {
+        "T": 96,
+        "isr": 0.0400527655067297,
+        "scr": 0.8398681018035887,
+        "mean_gen_syll": 17.94,
+        "compression_syll": 0.04797081865715492,
+        "truncation_rate": 1.0,
+        "chrf": null,
+        "rougeL": null,
+        "bleu4": null
+      },
+      {
+        "T": 128,
+        "isr": 0.045420042144981285,
+        "scr": 0.8306348562616203,
+        "mean_gen_syll": 23.566666666666666,
+        "compression_syll": 0.06295934588760081,
+        "truncation_rate": 1.0,
+        "chrf": null,
+        "rougeL": null,
+        "bleu4": null
+      },
+      {
+        "T": 192,
+        "isr": 0.05270628950776825,
+        "scr": 0.8286113162951119,
+        "mean_gen_syll": 33.626666666666665,
+        "compression_syll": 0.08923179936821943,
+        "truncation_rate": 1.0,
+        "chrf": null,
+        "rougeL": null,
+        "bleu4": null
+      },
+      {
+        "T": 256,
+        "isr": 0.05394935928290851,
+        "scr": 0.8206649479586527,
+        "mean_gen_syll": 42.526666666666664,
+        "compression_syll": 0.1135460271259835,
+        "truncation_rate": 1.0,
+        "chrf": null,
+        "rougeL": null,
+        "bleu4": null
+      }
+    ],
+    "spearman_compressionRate_T_isr": 0.6428571428571428,
+    "spearman_invT_isr": -0.6428571428571428,
+    "isr_fluctuation_ratio": 1.3469571601452563,
+    "note_chrf_rouge_bleu": "逐档 chrF/ROUGE-L/BLEU-4 未被长度扫脚本记录(仅 ISR/scr/产出量逐档可用); 语义层指标待补 --metrics 重扫"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "model": "cino-base-v2",
+  "setting": "full",
+  "best_epoch": 4,
+  "accuracy": 0.8751,
+  "macro_f1": 0.8657,
+  "per_class_f1": {
+    "ecotourism": 0.8771,
+    "law": 0.8877,
+    "new_agripastoral": 0.8187,
+    "politics": 0.9435,
+    "science_health": 0.7954,
+    "tibetan_culture": 0.7818,
+    "world_outlook": 0.9556
+  },
+  "confusion_matrix": [
+    [
+      157,
+      5,
+      8,
+      0,
+      2,
+      2,
+      2
+    ],
+    [
+      2,
+      170,
+      7,
+      6,
+      10,
+      1,
+      0
+    ],
+    [
+      10,
+      2,
+      149,
+      2,
+      19,
+      4,
+      0
+    ],
+    [
+      1,
+      3,
+      2,
+      167,
+      0,
+      2,
+      0
+    ],
+    [
+      1,
+      5,
+      7,
+      3,
+      103,
+      2,
+      1
+    ],
+    [
+      4,
+      2,
+      5,
+      0,
+      2,
+      43,
+      0
+    ],
+    [
+      7,
+      0,
+      0,
+      1,
+      1,
+      0,
+      129
+    ]
+  ],
+  "labels": [
+    "ecotourism",
+    "law",
+    "new_agripastoral",
+    "politics",
+    "science_health",
+    "tibetan_culture",
+    "world_outlook"
+  ],
+  "config": {
+    "model": "cino-base-v2",
+    "gpu": 0,
+    "epochs": 4,
+    "batch": 16,
+    "lr": 2e-05,
+    "maxlen": 512,
+    "setting": "full"
+  }
+}

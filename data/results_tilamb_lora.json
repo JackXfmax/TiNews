@@ -1,0 +1,12 @@
+{
+  "model": "TiLamb-7B-LoRA",
+  "val_ppl": 5.03,
+  "config": {
+    "gpu": 1,
+    "epochs": 1,
+    "batch": 1,
+    "accum": 32,
+    "lr": 0.0001,
+    "maxsteps": 0
+  }
+}

@@ -1,0 +1,201 @@
+{
+  "datasets": {
+    "classification_corpus": {
+      "dataset": "Classification corpus (10,484)",
+      "source": "classification_train+val",
+      "n": 10484,
+      "syllable": {
+        "min": 12,
+        "q25": 192.0,
+        "median": 389.0,
+        "q75": 770.0,
+        "max": 27123,
+        "hist_10bins": [
+          10426,
+          47,
+          1,
+          5,
+          0,
+          1,
+          0,
+          1,
+          1,
+          2
+        ]
+      },
+      "sentence": {
+        "min": 1,
+        "q25": 7.0,
+        "median": 14.0,
+        "q75": 27.0,
+        "max": 964,
+        "hist_10bins": [
+          10412,
+          59,
+          4,
+          4,
+          0,
+          1,
+          1,
+          0,
+          0,
+          3
+        ]
+      },
+      "sentence_bins": {
+        "1": 118,
+        "2-3": 847,
+        "4-6": 1556,
+        ">6": 7963
+      }
+    },
+    "continuation_val": {
+      "dataset": "Continuation val (3,769)",
+      "source": "continuation_val (context)",
+      "n": 3769,
+      "syllable": {
+        "min": 1,
+        "q25": 150,
+        "median": 372,
+        "q75": 783,
+        "max": 18983,
+        "hist_10bins": [
+          3543,
+          128,
+          28,
+          14,
+          22,
+          9,
+          6,
+          8,
+          5,
+          6
+        ]
+      },
+      "sentence": {
+        "min": 1,
+        "q25": 5,
+        "median": 14,
+        "q75": 29,
+        "max": 486,
+        "hist_10bins": [
+          3354,
+          250,
+          72,
+          22,
+          19,
+          19,
+          16,
+          8,
+          4,
+          5
+        ]
+      },
+      "sentence_bins": {
+        "1": 205,
+        "2-3": 413,
+        "4-6": 495,
+        ">6": 2656
+      }
+    },
+    "bodsum_6000": {
+      "dataset": "BodSUM-6000 (5,945)",
+      "source": "bodsum_train+test (text)",
+      "n": 5945,
+      "syllable": {
+        "min": 28,
+        "q25": 334,
+        "median": 446,
+        "q75": 559,
+        "max": 2458,
+        "hist_10bins": [
+          804,
+          3040,
+          1704,
+          266,
+          74,
+          34,
+          10,
+          8,
+          4,
+          1
+        ]
+      },
+      "sentence": {
+        "min": 1,
+        "q25": 17,
+        "median": 24,
+        "q75": 32,
+        "max": 150,
+        "hist_10bins": [
+          1113,
+          3081,
+          1341,
+          279,
+          74,
+          32,
+          9,
+          8,
+          6,
+          2
+        ]
+      },
+      "sentence_bins": {
+        "1": 1,
+        "2-3": 28,
+        "4-6": 107,
+        ">6": 5809
+      }
+    },
+    "ti_sum_992": {
+      "dataset": "Ti-SUM (992)",
+      "source": "local data/task3/tisum_{train,test}.jsonl",
+      "n": 992,
+      "syllable": {
+        "min": 87,
+        "q25": 440.75,
+        "median": 665.5,
+        "q75": 1013.5,
+        "max": 5304,
+        "hist_10bins": [
+          444,
+          362,
+          96,
+          59,
+          22,
+          7,
+          1,
+          0,
+          0,
+          1
+        ]
+      },
+      "sentence": {
+        "min": 2,
+        "q25": 22.0,
+        "median": 32.0,
+        "q75": 52.0,
+        "max": 354,
+        "hist_10bins": [
+          589,
+          289,
+          85,
+          28,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "sentence_bins": {
+        "1": 0,
+        "2-3": 2,
+        "4-6": 23,
+        ">6": 967
+      }
+    }
+  },
+  "note": "字数/音节按 ་(tsheg) 切分音节、།/༎/换行切分句; 续写 val 取 context 字段; bodsum 取 text 字段."
+}

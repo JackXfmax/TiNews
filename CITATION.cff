@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+title: "TiNews: A Diagnostic Benchmark for Tibetan News Understanding under Syllable Orthography Constraints"
+message: "If you use TiNews, the ISR metric, or any result in this repository, please cite it as below."
+type: software
+authors:
+  - name: "[AUTHOR NAME]"
+    orcid: "https://orcid.org/[ORCID]"
+    email: "[EMAIL]"
+abstract: >-
+  TiNews is a diagnostic benchmark for Tibetan news understanding that exposes a
+  class of systematic structural failures invisible to standard metrics such as
+  perplexity or BLEU. It introduces the Illegal Syllable Rate (ISR), a syllable-level
+  orthography diagnostic, and frames compression behaviour through an Information-
+  Bottleneck / KL decomposition. The benchmark covers three tasks (7-class news
+  classification, sentence-level continuation, and abstractive summarization with
+  keywords) and ships with all experimental results, figure data, and significance
+  tests reported in the accompanying paper.
+keywords:
+  - Tibetan
+  - NLP benchmark
+  - low-resource
+  - orthography
+  - information bottleneck
+  - diagnostic evaluation
+license: MIT
+repository-code: "https://github.com/[GITHUB USERNAME]/TiNews"
+url: "https://github.com/[GITHUB USERNAME]/TiNews"

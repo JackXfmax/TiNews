@@ -1,0 +1,20 @@
+{
+  "model": "mT5-base",
+  "model_path": "<MODEL_ROOT>/models/mt5-base",
+  "timestamp": "2026-09-30 21:57:38",
+  "arch": "encoder-decoder (mT5)",
+  "teacher": {
+    "ppl_seq2seq": 1128.4655201103024,
+    "ce_sum": 8646544.765625,
+    "ntok": 1230192,
+    "bits_per_tibetan_syllable": 17.817420584201894
+  },
+  "gen_beam4_200": {
+    "bleu4": 2.6128541877982206e-08,
+    "chrf": 0.02634719775387319,
+    "rougeL": 0.023867685695729893,
+    "isr": 0.01918441204528161,
+    "scr": 0.4322728136310079,
+    "n": 200
+  }
+}

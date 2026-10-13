@@ -1,0 +1,24 @@
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+venv/
+
+# Local experiment logs
+*.log
+
+# Third-party raw corpora (NOT bundled; obtain from original sources under their
+# own licenses and place here only for local reproduction):
+#   bodsum_test.jsonl      (BodSUM test split)
+#   tisum_parsed.jsonl     (Ti-SUM extended split)
+#   human_eval_contexts.jsonl
+bodsum_test.jsonl
+tisum_parsed.jsonl
+human_eval_contexts.jsonl

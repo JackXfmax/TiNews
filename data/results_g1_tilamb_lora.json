@@ -1,0 +1,20 @@
+{
+  "model": "TiLamb-7B-LoRA",
+  "model_path": "<MODEL_ROOT>/.cache/modelscope/hub/models/YoLo2000/TiLamb-7B",
+  "timestamp": "2026-09-30 20:41:18",
+  "teacher": {
+    "ppl_own_tokenizer": 5.0256,
+    "bits_per_tibetan_syllable": 1.2333,
+    "ce_sum": 598481.0890655518,
+    "ntok": 370681,
+    "syll_sum": 485286
+  },
+  "gen_beam4_200": {
+    "bleu4": 0.185,
+    "chrf": 0.2138,
+    "rougeL": 0.1035,
+    "isr": 0.004,
+    "scr": 0.8836,
+    "n": 200
+  }
+}

@@ -1,0 +1,1320 @@
+{
+  "labels": [
+    "ecotourism",
+    "law",
+    "new_agripastoral",
+    "politics",
+    "science_health",
+    "tibetan_culture",
+    "world_outlook"
+  ],
+  "settings": [
+    "full",
+    "lead200",
+    "lead500",
+    "first_sent"
+  ],
+  "results": {
+    "full": {
+      "NaiveBayes": {
+        "accuracy": 0.7617,
+        "macro_f1": 0.7498,
+        "train_sec": 0.1
+      },
+      "SVM": {
+        "accuracy": 0.857,
+        "macro_f1": 0.8505,
+        "train_sec": 7.8
+      },
+      "LogReg": {
+        "accuracy": 0.8379,
+        "macro_f1": 0.8277,
+        "train_sec": 13.8
+      }
+    },
+    "lead200": {
+      "NaiveBayes": {
+        "accuracy": 0.7083,
+        "macro_f1": 0.6816,
+        "train_sec": 0.0
+      },
+      "SVM": {
+        "accuracy": 0.7617,
+        "macro_f1": 0.7373,
+        "train_sec": 2.2
+      },
+      "LogReg": {
+        "accuracy": 0.7607,
+        "macro_f1": 0.731,
+        "train_sec": 11.4
+      }
+    },
+    "lead500": {
+      "NaiveBayes": {
+        "accuracy": 0.7531,
+        "macro_f1": 0.7355,
+        "train_sec": 0.0
+      },
+      "SVM": {
+        "accuracy": 0.8151,
+        "macro_f1": 0.7986,
+        "train_sec": 3.6
+      },
+      "LogReg": {
+        "accuracy": 0.8074,
+        "macro_f1": 0.7889,
+        "train_sec": 12.8
+      }
+    },
+    "first_sent": {
+      "NaiveBayes": {
+        "accuracy": 0.7255,
+        "macro_f1": 0.6942,
+        "train_sec": 0.0
+      },
+      "SVM": {
+        "accuracy": 0.8055,
+        "macro_f1": 0.7819,
+        "train_sec": 3.8
+      },
+      "LogReg": {
+        "accuracy": 0.7846,
+        "macro_f1": 0.7581,
+        "train_sec": 12.4
+      }
+    }
+  },
+  "per_class_f1": {
+    "full": {
+      "NaiveBayes": {
+        "ecotourism": 0.7665,
+        "law": 0.8175,
+        "new_agripastoral": 0.7263,
+        "politics": 0.7701,
+        "science_health": 0.6506,
+        "tibetan_culture": 0.6607,
+        "world_outlook": 0.8571
+      },
+      "SVM": {
+        "ecotourism": 0.8611,
+        "law": 0.8608,
+        "new_agripastoral": 0.8032,
+        "politics": 0.905,
+        "science_health": 0.7984,
+        "tibetan_culture": 0.7885,
+        "world_outlook": 0.9368
+      },
+      "LogReg": {
+        "ecotourism": 0.8442,
+        "law": 0.8687,
+        "new_agripastoral": 0.7842,
+        "politics": 0.8825,
+        "science_health": 0.7581,
+        "tibetan_culture": 0.7451,
+        "world_outlook": 0.9111
+      }
+    },
+    "lead200": {
+      "NaiveBayes": {
+        "ecotourism": 0.6867,
+        "law": 0.7665,
+        "new_agripastoral": 0.6427,
+        "politics": 0.8024,
+        "science_health": 0.6198,
+        "tibetan_culture": 0.4615,
+        "world_outlook": 0.7915
+      },
+      "SVM": {
+        "ecotourism": 0.7435,
+        "law": 0.802,
+        "new_agripastoral": 0.7135,
+        "politics": 0.8466,
+        "science_health": 0.6527,
+        "tibetan_culture": 0.5532,
+        "world_outlook": 0.8498
+      },
+      "LogReg": {
+        "ecotourism": 0.7558,
+        "law": 0.8088,
+        "new_agripastoral": 0.7172,
+        "politics": 0.8333,
+        "science_health": 0.6639,
+        "tibetan_culture": 0.5,
+        "world_outlook": 0.8382
+      }
+    },
+    "lead500": {
+      "NaiveBayes": {
+        "ecotourism": 0.7449,
+        "law": 0.8123,
+        "new_agripastoral": 0.7012,
+        "politics": 0.7977,
+        "science_health": 0.6498,
+        "tibetan_culture": 0.6,
+        "world_outlook": 0.8429
+      },
+      "SVM": {
+        "ecotourism": 0.8148,
+        "law": 0.8653,
+        "new_agripastoral": 0.7377,
+        "politics": 0.8809,
+        "science_health": 0.7131,
+        "tibetan_culture": 0.6667,
+        "world_outlook": 0.9118
+      },
+      "LogReg": {
+        "ecotourism": 0.8046,
+        "law": 0.8564,
+        "new_agripastoral": 0.743,
+        "politics": 0.8629,
+        "science_health": 0.716,
+        "tibetan_culture": 0.6383,
+        "world_outlook": 0.9011
+      }
+    },
+    "first_sent": {
+      "NaiveBayes": {
+        "ecotourism": 0.731,
+        "law": 0.7929,
+        "new_agripastoral": 0.6753,
+        "politics": 0.7701,
+        "science_health": 0.6612,
+        "tibetan_culture": 0.4494,
+        "world_outlook": 0.7793
+      },
+      "SVM": {
+        "ecotourism": 0.7874,
+        "law": 0.845,
+        "new_agripastoral": 0.7789,
+        "politics": 0.8718,
+        "science_health": 0.7407,
+        "tibetan_culture": 0.5882,
+        "world_outlook": 0.8613
+      },
+      "LogReg": {
+        "ecotourism": 0.7834,
+        "law": 0.8395,
+        "new_agripastoral": 0.7487,
+        "politics": 0.8415,
+        "science_health": 0.7068,
+        "tibetan_culture": 0.5532,
+        "world_outlook": 0.8333
+      }
+    }
+  },
+  "confusion_matrices": {
+    "full": {
+      "NaiveBayes": [
+        [
+          128,
+          10,
+          13,
+          8,
+          4,
+          4,
+          9
+        ],
+        [
+          3,
+          159,
+          5,
+          18,
+          8,
+          3,
+          0
+        ],
+        [
+          7,
+          4,
+          138,
+          10,
+          21,
+          4,
+          2
+        ],
+        [
+          1,
+          6,
+          21,
+          139,
+          4,
+          1,
+          3
+        ],
+        [
+          4,
+          12,
+          10,
+          6,
+          81,
+          7,
+          2
+        ],
+        [
+          4,
+          1,
+          3,
+          3,
+          6,
+          37,
+          2
+        ],
+        [
+          11,
+          1,
+          4,
+          2,
+          3,
+          0,
+          117
+        ]
+      ],
+      "SVM": [
+        [
+          155,
+          5,
+          8,
+          3,
+          1,
+          2,
+          2
+        ],
+        [
+          4,
+          167,
+          7,
+          8,
+          8,
+          1,
+          1
+        ],
+        [
+          9,
+          8,
+          151,
+          5,
+          10,
+          2,
+          1
+        ],
+        [
+          2,
+          3,
+          5,
+          162,
+          2,
+          1,
+          0
+        ],
+        [
+          3,
+          8,
+          10,
+          2,
+          97,
+          1,
+          1
+        ],
+        [
+          4,
+          1,
+          6,
+          2,
+          2,
+          41,
+          0
+        ],
+        [
+          7,
+          0,
+          3,
+          1,
+          1,
+          0,
+          126
+        ]
+      ],
+      "LogReg": [
+        [
+          149,
+          7,
+          6,
+          4,
+          3,
+          1,
+          6
+        ],
+        [
+          2,
+          172,
+          6,
+          6,
+          9,
+          1,
+          0
+        ],
+        [
+          12,
+          6,
+          149,
+          5,
+          12,
+          2,
+          0
+        ],
+        [
+          1,
+          4,
+          12,
+          154,
+          2,
+          1,
+          1
+        ],
+        [
+          1,
+          9,
+          11,
+          3,
+          94,
+          3,
+          1
+        ],
+        [
+          5,
+          1,
+          6,
+          1,
+          4,
+          38,
+          1
+        ],
+        [
+          7,
+          1,
+          4,
+          1,
+          2,
+          0,
+          123
+        ]
+      ]
+    },
+    "lead200": {
+      "NaiveBayes": [
+        [
+          114,
+          8,
+          27,
+          7,
+          3,
+          7,
+          10
+        ],
+        [
+          3,
+          151,
+          14,
+          9,
+          13,
+          2,
+          4
+        ],
+        [
+          16,
+          10,
+          134,
+          5,
+          14,
+          3,
+          4
+        ],
+        [
+          2,
+          11,
+          17,
+          136,
+          4,
+          0,
+          5
+        ],
+        [
+          3,
+          14,
+          18,
+          4,
+          75,
+          2,
+          6
+        ],
+        [
+          9,
+          2,
+          10,
+          2,
+          8,
+          21,
+          4
+        ],
+        [
+          9,
+          2,
+          11,
+          1,
+          3,
+          0,
+          112
+        ]
+      ],
+      "SVM": [
+        [
+          129,
+          8,
+          19,
+          6,
+          3,
+          4,
+          7
+        ],
+        [
+          7,
+          164,
+          9,
+          4,
+          10,
+          1,
+          1
+        ],
+        [
+          15,
+          11,
+          137,
+          9,
+          10,
+          3,
+          1
+        ],
+        [
+          4,
+          10,
+          6,
+          149,
+          4,
+          1,
+          1
+        ],
+        [
+          2,
+          11,
+          16,
+          7,
+          78,
+          2,
+          6
+        ],
+        [
+          9,
+          4,
+          6,
+          1,
+          7,
+          26,
+          3
+        ],
+        [
+          5,
+          5,
+          5,
+          1,
+          5,
+          1,
+          116
+        ]
+      ],
+      "LogReg": [
+        [
+          130,
+          7,
+          22,
+          5,
+          2,
+          5,
+          5
+        ],
+        [
+          4,
+          165,
+          8,
+          5,
+          11,
+          1,
+          2
+        ],
+        [
+          14,
+          9,
+          142,
+          8,
+          8,
+          3,
+          2
+        ],
+        [
+          1,
+          12,
+          11,
+          145,
+          3,
+          1,
+          2
+        ],
+        [
+          2,
+          14,
+          13,
+          7,
+          79,
+          2,
+          5
+        ],
+        [
+          11,
+          2,
+          8,
+          2,
+          6,
+          23,
+          4
+        ],
+        [
+          6,
+          3,
+          6,
+          1,
+          7,
+          1,
+          114
+        ]
+      ]
+    },
+    "lead500": {
+      "NaiveBayes": [
+        [
+          127,
+          6,
+          16,
+          8,
+          2,
+          8,
+          9
+        ],
+        [
+          4,
+          158,
+          12,
+          10,
+          7,
+          1,
+          4
+        ],
+        [
+          11,
+          7,
+          142,
+          7,
+          16,
+          2,
+          1
+        ],
+        [
+          5,
+          9,
+          15,
+          138,
+          3,
+          0,
+          5
+        ],
+        [
+          3,
+          13,
+          20,
+          4,
+          77,
+          3,
+          2
+        ],
+        [
+          6,
+          0,
+          8,
+          2,
+          7,
+          30,
+          3
+        ],
+        [
+          9,
+          0,
+          6,
+          2,
+          3,
+          0,
+          118
+        ]
+      ],
+      "SVM": [
+        [
+          143,
+          6,
+          13,
+          6,
+          1,
+          3,
+          4
+        ],
+        [
+          4,
+          167,
+          10,
+          5,
+          7,
+          2,
+          1
+        ],
+        [
+          11,
+          4,
+          142,
+          8,
+          17,
+          2,
+          2
+        ],
+        [
+          2,
+          6,
+          6,
+          159,
+          1,
+          1,
+          0
+        ],
+        [
+          4,
+          7,
+          15,
+          6,
+          87,
+          2,
+          1
+        ],
+        [
+          5,
+          0,
+          8,
+          1,
+          7,
+          33,
+          2
+        ],
+        [
+          6,
+          0,
+          5,
+          1,
+          2,
+          0,
+          124
+        ]
+      ],
+      "LogReg": [
+        [
+          140,
+          6,
+          17,
+          4,
+          1,
+          3,
+          5
+        ],
+        [
+          3,
+          170,
+          8,
+          6,
+          6,
+          1,
+          2
+        ],
+        [
+          9,
+          5,
+          146,
+          7,
+          17,
+          1,
+          1
+        ],
+        [
+          4,
+          7,
+          9,
+          151,
+          2,
+          1,
+          1
+        ],
+        [
+          3,
+          11,
+          14,
+          4,
+          87,
+          2,
+          1
+        ],
+        [
+          7,
+          1,
+          8,
+          2,
+          6,
+          30,
+          2
+        ],
+        [
+          6,
+          1,
+          5,
+          1,
+          2,
+          0,
+          123
+        ]
+      ]
+    },
+    "first_sent": {
+      "NaiveBayes": [
+        [
+          125,
+          8,
+          17,
+          8,
+          3,
+          5,
+          10
+        ],
+        [
+          3,
+          157,
+          10,
+          13,
+          9,
+          1,
+          3
+        ],
+        [
+          13,
+          7,
+          131,
+          8,
+          15,
+          4,
+          8
+        ],
+        [
+          4,
+          8,
+          19,
+          134,
+          4,
+          1,
+          5
+        ],
+        [
+          5,
+          13,
+          13,
+          4,
+          81,
+          1,
+          5
+        ],
+        [
+          5,
+          6,
+          6,
+          4,
+          7,
+          20,
+          8
+        ],
+        [
+          11,
+          1,
+          6,
+          2,
+          4,
+          1,
+          113
+        ]
+      ],
+      "SVM": [
+        [
+          137,
+          6,
+          13,
+          5,
+          3,
+          7,
+          5
+        ],
+        [
+          2,
+          169,
+          6,
+          7,
+          7,
+          2,
+          3
+        ],
+        [
+          10,
+          5,
+          148,
+          5,
+          11,
+          3,
+          4
+        ],
+        [
+          5,
+          7,
+          6,
+          153,
+          2,
+          1,
+          1
+        ],
+        [
+          5,
+          10,
+          9,
+          3,
+          90,
+          2,
+          3
+        ],
+        [
+          3,
+          4,
+          9,
+          2,
+          6,
+          30,
+          2
+        ],
+        [
+          10,
+          3,
+          3,
+          1,
+          2,
+          1,
+          118
+        ]
+      ],
+      "LogReg": [
+        [
+          132,
+          7,
+          17,
+          6,
+          2,
+          5,
+          7
+        ],
+        [
+          2,
+          170,
+          7,
+          7,
+          6,
+          1,
+          3
+        ],
+        [
+          8,
+          5,
+          146,
+          5,
+          14,
+          3,
+          5
+        ],
+        [
+          4,
+          8,
+          10,
+          146,
+          4,
+          1,
+          2
+        ],
+        [
+          3,
+          10,
+          12,
+          4,
+          88,
+          1,
+          4
+        ],
+        [
+          4,
+          5,
+          6,
+          3,
+          10,
+          26,
+          2
+        ],
+        [
+          8,
+          4,
+          6,
+          1,
+          3,
+          1,
+          115
+        ]
+      ]
+    }
+  },
+  "input_len": {
+    "full": {
+      "median": 1710,
+      "mean": 2477.7,
+      "min": 46,
+      "max": 80113,
+      "empty": 0,
+      "val_avg_features": 1834.6
+    },
+    "lead200": {
+      "median": 200,
+      "mean": 199.1,
+      "min": 46,
+      "max": 200,
+      "empty": 0,
+      "val_avg_features": 431.3
+    },
+    "lead500": {
+      "median": 500,
+      "mean": 481.9,
+      "min": 46,
+      "max": 500,
+      "empty": 0,
+      "val_avg_features": 799.3
+    },
+    "first_sent": {
+      "median": 426,
+      "mean": 570.2,
+      "min": 4,
+      "max": 16201,
+      "empty": 0,
+      "val_avg_features": 815.0
+    }
+  },
+  "confusion_summary": {
+    "full|SVM": {
+      "n_errors": 150,
+      "top": [
+        [
+          10,
+          "science_health",
+          "new_agripastoral",
+          6.7
+        ],
+        [
+          10,
+          "new_agripastoral",
+          "science_health",
+          6.7
+        ],
+        [
+          9,
+          "new_agripastoral",
+          "ecotourism",
+          6.0
+        ],
+        [
+          8,
+          "science_health",
+          "law",
+          5.3
+        ],
+        [
+          8,
+          "new_agripastoral",
+          "law",
+          5.3
+        ]
+      ]
+    },
+    "full|LogReg": {
+      "n_errors": 170,
+      "top": [
+        [
+          12,
+          "politics",
+          "new_agripastoral",
+          7.1
+        ],
+        [
+          12,
+          "new_agripastoral",
+          "science_health",
+          7.1
+        ],
+        [
+          12,
+          "new_agripastoral",
+          "ecotourism",
+          7.1
+        ],
+        [
+          11,
+          "science_health",
+          "new_agripastoral",
+          6.5
+        ],
+        [
+          9,
+          "science_health",
+          "law",
+          5.3
+        ]
+      ]
+    },
+    "lead200|SVM": {
+      "n_errors": 250,
+      "top": [
+        [
+          19,
+          "ecotourism",
+          "new_agripastoral",
+          7.6
+        ],
+        [
+          16,
+          "science_health",
+          "new_agripastoral",
+          6.4
+        ],
+        [
+          15,
+          "new_agripastoral",
+          "ecotourism",
+          6.0
+        ],
+        [
+          11,
+          "science_health",
+          "law",
+          4.4
+        ],
+        [
+          11,
+          "new_agripastoral",
+          "law",
+          4.4
+        ]
+      ]
+    },
+    "lead200|LogReg": {
+      "n_errors": 251,
+      "top": [
+        [
+          22,
+          "ecotourism",
+          "new_agripastoral",
+          8.8
+        ],
+        [
+          14,
+          "science_health",
+          "law",
+          5.6
+        ],
+        [
+          14,
+          "new_agripastoral",
+          "ecotourism",
+          5.6
+        ],
+        [
+          13,
+          "science_health",
+          "new_agripastoral",
+          5.2
+        ],
+        [
+          12,
+          "politics",
+          "law",
+          4.8
+        ]
+      ]
+    },
+    "lead500|SVM": {
+      "n_errors": 194,
+      "top": [
+        [
+          17,
+          "new_agripastoral",
+          "science_health",
+          8.8
+        ],
+        [
+          15,
+          "science_health",
+          "new_agripastoral",
+          7.7
+        ],
+        [
+          13,
+          "ecotourism",
+          "new_agripastoral",
+          6.7
+        ],
+        [
+          11,
+          "new_agripastoral",
+          "ecotourism",
+          5.7
+        ],
+        [
+          10,
+          "law",
+          "new_agripastoral",
+          5.2
+        ]
+      ]
+    },
+    "lead500|LogReg": {
+      "n_errors": 202,
+      "top": [
+        [
+          17,
+          "new_agripastoral",
+          "science_health",
+          8.4
+        ],
+        [
+          17,
+          "ecotourism",
+          "new_agripastoral",
+          8.4
+        ],
+        [
+          14,
+          "science_health",
+          "new_agripastoral",
+          6.9
+        ],
+        [
+          11,
+          "science_health",
+          "law",
+          5.4
+        ],
+        [
+          9,
+          "politics",
+          "new_agripastoral",
+          4.5
+        ]
+      ]
+    },
+    "first_sent|SVM": {
+      "n_errors": 204,
+      "top": [
+        [
+          13,
+          "ecotourism",
+          "new_agripastoral",
+          6.4
+        ],
+        [
+          11,
+          "new_agripastoral",
+          "science_health",
+          5.4
+        ],
+        [
+          10,
+          "world_outlook",
+          "ecotourism",
+          4.9
+        ],
+        [
+          10,
+          "science_health",
+          "law",
+          4.9
+        ],
+        [
+          10,
+          "new_agripastoral",
+          "ecotourism",
+          4.9
+        ]
+      ]
+    },
+    "first_sent|LogReg": {
+      "n_errors": 226,
+      "top": [
+        [
+          17,
+          "ecotourism",
+          "new_agripastoral",
+          7.5
+        ],
+        [
+          14,
+          "new_agripastoral",
+          "science_health",
+          6.2
+        ],
+        [
+          12,
+          "science_health",
+          "new_agripastoral",
+          5.3
+        ],
+        [
+          10,
+          "tibetan_culture",
+          "science_health",
+          4.4
+        ],
+        [
+          10,
+          "science_health",
+          "law",
+          4.4
+        ]
+      ]
+    }
+  },
+  "tfidf": {
+    "analyzer": "char",
+    "ngram_range": [
+      2,
+      5
+    ],
+    "max_features": 5000
+  },
+  "split": "seed=42, 90/10 stratified (与全文基线完全相同的划分)"
+}

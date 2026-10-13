@@ -1,0 +1,20 @@
+{
+  "model": "Llama-3.1-8B-Instruct",
+  "model_path": "<MODEL_ROOT>/models/LLM-Research/Meta-Llama-3.1-8B-Instruct",
+  "timestamp": "2026-09-29 21:46:32",
+  "teacher": {
+    "ppl_own_tokenizer": 1.9875,
+    "bits_per_tibetan_syllable": 0.6733,
+    "ce_sum": 326744.2171020508,
+    "ntok": 475683,
+    "syll_sum": 485286
+  },
+  "gen_beam4_200": {
+    "bleu4": 0.0,
+    "chrf": 0.0258,
+    "rougeL": 0.0001,
+    "isr": 0.269,
+    "scr": 0.0918,
+    "n": 200
+  }
+}

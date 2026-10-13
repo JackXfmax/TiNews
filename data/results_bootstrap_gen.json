@@ -1,0 +1,50 @@
+{
+  "isr_Qwen_minus_TiLamb-LoRA": {
+    "mean": 0.060777539136928904,
+    "ci95": [
+      0.04712888550387123,
+      0.07626534912661845
+    ],
+    "ci_contains_zero": false
+  },
+  "isr_Llama_minus_TiLamb-LoRA": {
+    "mean": 0.26501158017931237,
+    "ci95": [
+      0.24206855602495178,
+      0.28828574255702166
+    ],
+    "ci_contains_zero": false
+  },
+  "isr_TiLamb-base_minus_TiLamb-LoRA": {
+    "mean": 0.0117511102239251,
+    "ci95": [
+      0.007173532929902681,
+      0.017046506530141073
+    ],
+    "ci_contains_zero": false
+  },
+  "chrf_TiLamb-LoRA_minus_Qwen": {
+    "mean": 0.17329991354470786,
+    "ci95": [
+      0.16392615926875675,
+      0.18226293164308854
+    ],
+    "ci_contains_zero": false
+  },
+  "chrf_TiLamb-LoRA_minus_Llama": {
+    "mean": 0.1880236962678189,
+    "ci95": [
+      0.17955845845214513,
+      0.19621558713426596
+    ],
+    "ci_contains_zero": false
+  },
+  "chrf_TiLamb-LoRA_minus_TiLamb-base": {
+    "mean": 0.008917701217244518,
+    "ci95": [
+      0.003269179138176519,
+      0.01515225904108147
+    ],
+    "ci_contains_zero": false
+  }
+}

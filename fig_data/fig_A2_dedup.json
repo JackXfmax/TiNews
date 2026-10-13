@@ -1,0 +1,10 @@
+{
+  "pre_dedup_total": null,
+  "pre_dedup_available": false,
+  "note": "原始未去重 BodSUM 未在服务器留存; 当前 bodsum_train+test 为已去重版本(5,945). 重复条数(应54)无法从现存文件核验.",
+  "deduped_total": 5945,
+  "train": 5351,
+  "test": 594,
+  "duplicate_ids_within_current": 0,
+  "duplicate_texts_within_current": 0
+}

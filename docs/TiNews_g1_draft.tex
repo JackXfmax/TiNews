@@ -1,0 +1,72 @@
+% ============================================================
+% TiNews — §G1 通用大模型对照 (General-Purpose LLM Baseline)
+% 草稿：可直接并入正文（建议置于 §9.4 之后或独立小节）
+% 数据来源：results_ledger.md §6.8；脚本 qwen_baseline.py
+% 红线：禁止任何"TiLamb 整体优于通用"式笼统 claim；必须分维度陈述
+% ============================================================
+
+\subsection{通用大模型零样本基线对照}\label{sec:g1}
+
+\paragraph{动机。}
+本基准的续写任务由藏文专门化模型 TiLamb-7B（基座及其在藏文新闻续写上的 LoRA 微调）主导。
+为验证"藏文专门化预训练是否带来零样本续写优势"这一卖点，我们引入同等规模的通用大模型作为零样本对照，
+以暴露基准在通用模型上的 headroom，并检验藏文专门化的真实增益边界。
+
+\paragraph{实验设置。}
+对照模型为 Qwen2.5-7B-Instruct 与 Llama-3.1-8B-Instruct（均为通用 7--8B 指令模型），
+以及 TiLamb-7B-base 与 TiLamb-7B+LoRA（藏文专门化）。
+所有模型在 \texttt{continuation\_val}（3769 条）上以 teacher-forcing 计算两种指标：
+（1）\textbf{自身词表困惑度 PPL}；
+（2）\textbf{每藏文字节的比特数（bits/syllable）} $= \mathrm{CE}_{\text{sum}} / N_{\text{syll}}$，
+其中 $N_{\text{syll}}=485286$ 为验证集藏文音节总数，三模型共用同一分母，从而绕过词表差异实现跨 tokenizer 可比。
+此外，四模型均以主协议（beam=4, no\_repeat\_ngram=3, seed=42, max\_new=128）生成 200 条续写，
+报告 BLEU-4 / chrF++ / ROUGE-L / ISR / SCR 与单参考文本对照。
+
+\paragraph{结果。}
+表~\ref{tab:g1} 汇总四模型的 teacher-forcing 与生成指标。
+人类参考文本基线为 $\mathrm{ISR}=0.00384$、$\mathrm{SCR}=0.8821$（见 \S\ref{sec:decode}）。
+
+\begin{table}[h]
+\centering\small
+\caption{通用大模型与藏文专门化模型的零样本续写对照。ISR 越低越好（越接近人类基线），SCR 越高越好；PPL 与 bits/syllable 越低越好。}
+\label{tab:g1}
+\begin{tabular}{lccccc}
+\toprule
+模型 & 类型 & PPL$\downarrow$ & bits/syll$\downarrow$ & chrF++$\uparrow$ & ISR$\downarrow$ / SCR$\uparrow$ \\
+\midrule
+Llama-3.1-8B-Instruct & 通用 & \textbf{1.99} & \textbf{0.673} & 0.0258 & 0.269 / 0.092 \\
+Qwen2.5-7B-Instruct  & 通用 & 3.70 & 1.251 & 0.0405 & 0.0648 / 0.749 \\
+TiLamb-7B-base        & 专门化 & 5.73 & 1.333 & 0.2049 & 0.0157 / 0.872 \\
+TiLamb-7B+LoRA        & 专门化+微调 & 5.03 & 1.233 & \textbf{0.2138} & \textbf{0.004} / \textbf{0.884} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{分维度发现（不主张整体优劣）。}
+\begin{enumerate}
+\item \textbf{困惑度维度}：通用模型显著更低（跨模型可比口径 bits/syll：Llama 0.673 $<$ TiLamb+LoRA 1.233 $<$ Qwen 1.251 $<$ TiLamb-base 1.333；PPL 为各自 tokenizer 口径、不可跨模型直比）。在该口径下 LoRA 微调已反超 Qwen，但仍未反超 Llama。
+在 teacher-forcing 困惑度上，"藏文专门化模型零样本优于通用大模型"这一命题\emph{不成立}——
+通用模型凭借更大的训练规模展现出更强的整体语言建模能力。此即本基准的威胁 T-g1。
+\item \textbf{藏文正字法维度}：通用模型在藏文音节合法性上\emph{系统性失效}。
+Llama 的 ISR 高达 0.269（即 26.9\% 的生成音节非法，约人类基线 0.00384 的 45 倍），SCR 仅 0.092（仅 9.2\% 音节为合法且含元音/后加字）；
+而 TiLamb-7B+LoRA 的 ISR=0.004 已接近人类基线、SCR=0.884 与参考文本相当。
+表明藏文专门化训练使模型学到了通用模型缺失的藏文正字法结构。
+\item \textbf{任务匹配维度}：TiLamb-7B+LoRA 的 chrF++（0.2138）最高，因其曾在藏文新闻续写上微调，生成更贴合参考风格；
+通用模型 chrF++ 极低（Llama 0.026、Qwen 0.041），与其未见过藏文新闻续写分布一致。
+\item \textbf{度量不可混比}：chrF++ 高 \emph{不等于} PPL 低即"质量更好"——两指标分别度量"与参考的重叠度"与"困惑度"，
+物理含义不同。我们坚持分维度陈述，\emph{禁止}使用"TiLamb 比通用模型好"式笼统结论。
+\end{enumerate}
+
+\paragraph{混杂因素（须如实声明）。}
+Qwen/Llama 为 \textsc{Instruct} 模型、TiLamb 为 \textsc{base} 模型，且二者预训练规模（万亿级 token，2024）远大于 TiLamb（有限藏文语料）。
+严格的"同配方"比较应补 Qwen/Llama 的 base 版本与 TiLamb+LoRA 同口径对照；
+后者已在本实验中给出（LoRA 曾将基座 PPL 5.73 降至 5.03，见 \S\ref{sec:cont}），base 版对照留待未来工作。
+
+\paragraph{对论文贡献的重定位。}
+基于上述对照，本文\emph{不}主张"藏文专门化整体优于通用大模型"。
+本基准的贡献应重定位为：
+（a）提供藏文新闻续写的标准化评测协议与三层基线；
+（b）在解码分析上给出 KL 预算框架（\S\ref{sec:decode}）；
+（c）以 ISR/SCR/KL 等藏文特有诊断量，\emph{实证揭示通用大模型在藏文正字法上的系统性缺陷}；
+（d）表明藏文专门化虽在困惑度上仍有 headroom，但在正字法合法性与目标续写匹配度上已接近人类水平。
+若 TiLamb+LoRA 的困惑度最终未反超通用零样本，则明确表述为"微调在专业任务上缩窄了与通用模型的差距，但未反超其困惑度"。
